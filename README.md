@@ -11,6 +11,7 @@
 ```
 |-- devops
 |-- scripts
+|-- Dockerfile
 |-- src
     |-- dataset
     |-- examples
@@ -19,14 +20,13 @@
     |-- detect_mask_video.py
     |-- mask_detector.model
     |-- train_mask_detector.py
-    |-- Dockerfile
 ```
 
 + The `devops` contains the docker-compose file.
 + The `scripts` contains the `build.sh` file for building docker image.
 + The `dataset` directory contains the data for training model.
 + The `examples` are provided so that you can test the static image face mask detector.
-+ The `mask_detector.model` is model which was trained from the dataset.
++ The `mask_detector.model` is model which is trained from the dataset.
 
 ### Usages
 #### Using Docker

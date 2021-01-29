@@ -1,0 +1,13 @@
+version: '2'
+services:
+  train-mask-detector:
+    image: face-mask-detector
+    command: python train_mask_detector.py --dataset dataset
+    volumes:
+      - ../src:/src
+
+  detect-mask-image:
+    image: face-mask-detector
+    command: python detect_mask_image.py --image examples/example_04.jpg
+    volumes:
+      - ../src:/src
