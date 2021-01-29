@@ -20,6 +20,7 @@
     |-- mask_detector.model
     |-- train_mask_detector.py
     |-- Dockerfile
+```
 
 + The `devops` contains the docker-compose file.
 + The `scripts` contains the `build.sh` file for building docker image.
